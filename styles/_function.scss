@@ -1,0 +1,13 @@
+@mixin flexcenter($selection) {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: $selection;
+}
+
+@mixin imagefit($selection) {
+  width: 100%;
+  height: 100%;
+  object-fit: $selection;
+}

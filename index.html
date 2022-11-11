@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Yishak Abrham | Stats preview card component</title>
+    <!--stylesheet-->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--lexend font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <!--data-aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="container" data-aos="flip-up">
+          <picture>
+            <source
+              srcset="
+                /images/image-header-mobile.jpg   864w,
+                /images/image-header-desktop.jpg 1200w
+              "
+            />
+            <img
+              class="banner"
+              src="/images/image-header-desktop.jpg"
+              alt="image of people"
+            />
+          </picture>
+          <div class="text-content">
+            <h1>Get <span> insights</span> of that help your business grow.</h1>
+            <p>
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer exprience, and overall efficiency.
+            </p>
+            <div class="number">
+              <span class="num"
+                ><span class="companies" data-num="100">10k+</span>
+                <span class="number-text">companies</span></span
+              >
+              <span class="num"
+                ><span class="templates" data-num="314">314</span>
+                <span class="number-text">templates</span></span
+              >
+              <span class="num"
+                ><span class="queries" data-num="120">12M+</span>
+                <span class="number-text">Queries</span></span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--script-->
+
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
