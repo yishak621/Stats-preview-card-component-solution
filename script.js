@@ -13,7 +13,7 @@ const updateCount = (el) => {
     initialValue += increment;
     //to stop counting when it > value
     if (initialValue > value) {
-      el.textContent = `10k+`;
+      el.textContent = `10K+`;
       clearInterval(increaseCount);
       return; //<!--TODO: important
     }
