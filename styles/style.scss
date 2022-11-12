@@ -86,9 +86,9 @@ p {
 /*container*/
 .container {
   display: grid;
-  grid-template-columns: 80vw;
+  grid-template-columns: 90vw;
   grid-template-rows: 35% 65%;
-  margin: 0 10vw;
+  margin: 0 5vw;
 
   background-color: $color-dark-desaturated-blue;
   border-radius: 8px;
@@ -107,8 +107,8 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.35;
-    filter: brightness(40%);
+    opacity: 0.45;
+    filter: brightness(80%);
     filter: contrast(180%);
   }
   .banner {
@@ -177,7 +177,7 @@ p {
       }
       p {
         font-size: 1.3rem;
-
+        margin-bottom: 5rem;
         line-height: 1.8;
         max-width: 40ch;
       }

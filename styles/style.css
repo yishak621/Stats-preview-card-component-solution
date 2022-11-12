@@ -98,9 +98,9 @@ h4 {
 /*container*/
 .container {
   display: grid;
-  grid-template-columns: 80vw;
+  grid-template-columns: 90vw;
   grid-template-rows: 35% 65%;
-  margin: 0 10vw;
+  margin: 0 5vw;
   background-color: hsl(244deg, 38%, 16%);
   border-radius: 8px;
   overflow: hidden;
@@ -118,8 +118,8 @@ h4 {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.35;
-  filter: brightness(40%);
+  opacity: 0.45;
+  filter: brightness(80%);
   filter: contrast(180%);
 }
 .container .banner {
@@ -190,6 +190,7 @@ h4 {
   }
   .container .text-content p {
     font-size: 1.3rem;
+    margin-bottom: 5rem;
     line-height: 1.8;
     max-width: 40ch;
   }
