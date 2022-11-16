@@ -107,8 +107,9 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-
-    filter: opacity(0.4) drop-shadow(0 0 0 hsl(277, 100%, 50%));
+    opacity: 0.45;
+    filter: brightness(80%);
+    filter: contrast(180%);
   }
   .banner {
     @include imagefit(cover);
