@@ -100,13 +100,13 @@ h4 {
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 0.7fr);
-  margin: 0 2vw;
+  grid-template-rows: 0.5fr 1fr;
+  margin: 0 4vw;
   border-radius: 8px;
   overflow: hidden;
 }
 .container picture {
-  background-image: url(/images/image-header-desktop.jpg);
+  background-image: url(/images/image-header-mobile.jpg);
   background-color: hsl(277deg, 64%, 61%);
   background-repeat: no-repeat;
   background-size: cover;
@@ -145,7 +145,7 @@ h4 {
   font-weight: 400;
   color: hsla(0deg, 0%, 100%, 0.6);
   display: inline-block;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -164,6 +164,7 @@ h4 {
   }
   .container picture {
     order: 1;
+    background-image: url(/images/image-header-desktop.jpg);
   }
   .container .text-content {
     padding: 3rem 6rem;
