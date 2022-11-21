@@ -14,6 +14,7 @@ body {
   font-family: $font-inter;
   text-align: center;
   background-color: $color-very-dark-blue;
+  overflow: scroll;
 }
 
 *,
@@ -86,38 +87,43 @@ p {
 /*container*/
 .container {
   display: grid;
-  grid-template-columns: 90vw;
-  grid-template-rows: 35% 65%;
-  margin: 0 5vw;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 0.7fr);
+  margin: 0 2vw;
 
-  background-color: $color-dark-desaturated-blue;
   border-radius: 8px;
   overflow: hidden;
 
   picture {
-    position: relative;
-    overflow: hidden;
-  }
-  picture::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
+    background-image: url(/images/image-header-desktop.jpg);
     background-color: $color-soft-violet;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.45;
-    filter: brightness(80%);
-    filter: contrast(180%);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
   }
-  .banner {
-    @include imagefit(cover);
-    z-index: -1;
-  }
+  //we can also do it this way
+  // picture::after {
+  //   content: '';
+  //   display: block;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-color: $color-soft-violet;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   opacity: 0.45;
+  //   filter: brightness(80%);
+  //   filter: contrast(180%);
+  // }
+  //.banner {
+  //   @include imagefit(cover);
+  //z-index: -1;
+  //}
 
   .text-content {
     padding: 0 1.7rem;
+    background-color: $color-dark-desaturated-blue;
     display: grid;
     justify-content: space-between;
   }
@@ -171,6 +177,7 @@ p {
     }
     .text-content {
       padding: 3rem 6rem;
+
       h1 {
         max-width: 20ch;
         line-height: 1.4;
@@ -200,8 +207,7 @@ p {
 @media screen and (min-width: 500px) and (max-width: 864px) {
   .container {
     display: grid;
-    grid-template-columns: 45vw;
-    grid-template-rows: 35% 65%;
-    margin: 0 22vw;
+    grid-template-columns: 1fr;
+    max-width: 331px;
   }
 }
